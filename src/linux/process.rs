@@ -61,7 +61,7 @@ impl fmt::Display for ProcessStatus {
             ProcessStatus::Wakekill => "Wakekill",
             ProcessStatus::Waking => "Waking",
             ProcessStatus::Parked => "Parked",
-            ProcessStatus::Unknown(_) => "Unknown",
+            _ => "Unknown",
         })
     }
 }
